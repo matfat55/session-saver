@@ -1,0 +1,26 @@
+{
+  "name": "Browser Extension Development",
+  "dockerFile": "Dockerfile",
+  "forwardPorts": [3000, 8080],
+  "settings": {
+    "terminal.integrated.defaultProfile.linux": "bash",
+    "editor.formatOnSave": true,
+    "editor.codeActionsOnSave": {
+      "source.fixAll.eslint": true
+    }
+  },
+  "extensions": [
+    "dbaeumer.vscode-eslint",
+    "esbenp.prettier-vscode",
+    "firefox-devtools.vscode-firefox-debug",
+    "msjsdiag.debugger-for-chrome",
+    "ritwickdey.liveserver",
+    "ms-azuretools.vscode-docker",
+    "ms-vsliveshare.vsliveshare",
+    "editorconfig.editorconfig",
+    "streetsidesoftware.code-spell-checker",
+    "wix.vscode-import-cost"
+  ],
+  "postCreateCommand": "sh .devcontainer/postCreateCommand.sh",
+  "remoteUser": "node"
+}
